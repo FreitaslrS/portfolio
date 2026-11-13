@@ -111,7 +111,7 @@ section { padding: 6rem 8%; }
     display: flex; align-items: flex-end; justify-content: center;
 }
 .photo-frame::before { content: ""; position: absolute; inset: auto -20% -30% -20%; height: 70%; background: radial-gradient(closest-side, rgba(94,110,203,.55), transparent); }
-.photo-frame img { position: relative; width: 92%; }
+.photo-frame img { position: relative; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .float-card {
     position: absolute; display: flex; align-items: center; gap: .7rem;
     padding: .7rem 1rem; border-radius: 14px;
