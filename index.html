@@ -1,32 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samuel Freitas | Analista de Dados</title>
-    <meta name="description" content="Portfólio de Samuel Freitas, Analista de Dados: Power BI, SQL, Python e ETL para logística last mile." />
-    <link rel="icon" href="IMGS/favicon.png" type="image/png" />
+    <title>Samuel Freitas | Analista de Dados · Power BI, SQL e Python</title>
+    <meta name="description" content="Portfólio de Samuel Freitas, Analista de Dados em Osasco – SP: dashboards Power BI, SQL, PostgreSQL, Python e ETL para operações de logística last mile." />
+    <meta name="author" content="Samuel Freitas" />
+    <meta name="theme-color" content="#121216" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://freitaslrs.github.io/portfolio/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://freitaslrs.github.io/portfolio/" />
+    <link rel="alternate" hreflang="en" href="https://freitaslrs.github.io/portfolio/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://freitaslrs.github.io/portfolio/" />
+
+    <!-- Compartilhamento (LinkedIn, WhatsApp, X) -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Samuel Freitas" />
     <meta property="og:title" content="Samuel Freitas | Analista de Dados" />
-    <meta property="og:description" content="Power BI, SQL, Python e ETL para logística last mile. 11+ painéis Power BI, projetos de automação e infraestrutura." />
+    <meta property="og:description" content="Dashboards Power BI, SQL, PostgreSQL, Python e ETL para operações de logística last mile." />
     <meta property="og:url" content="https://freitaslrs.github.io/portfolio/" />
     <meta property="og:image" content="https://freitaslrs.github.io/portfolio/IMGS/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:image:alt" content="Samuel Freitas, Analista de Dados" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Samuel Freitas",
+        "jobTitle": "Analista de Dados",
+        "url": "https://freitaslrs.github.io/portfolio/",
+        "image": "https://freitaslrs.github.io/portfolio/IMGS/og-image.jpg",
+        "address": { "@type": "PostalAddress", "addressLocality": "Osasco", "addressRegion": "SP", "addressCountry": "BR" },
+        "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "Universidade Anhembi Morumbi" }],
+        "knowsAbout": ["Power BI", "DAX", "SQL", "PostgreSQL", "Python", "ETL", "Engenharia de dados", "Logística last mile"],
+        "knowsLanguage": ["pt-BR", "en"],
+        "sameAs": ["https://www.linkedin.com/in/samuel-freitas-95b9a324a", "https://github.com/FreitaslrS"]
+    }
+    </script>
+
+    <link rel="icon" href="IMGS/favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
     <link href="CSS/boxicons/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/script.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
     <!-- Cabeçalho -->
     <header class="header">
         <a href="#home" class="logo">
-            <img src="IMGS/logo-mark.png" alt="Logo" />
+            <img src="IMGS/logo-mark.webp" alt="" width="144" height="125" />
             <span>samuel<b>.freitas</b></span>
         </a>
-        <nav class="nav" id="nav">
+        <nav class="nav" id="nav" aria-label="Seções">
             <a href="#home">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#projetos">Projetos</a>
@@ -34,56 +69,63 @@
             <a href="#servicos">Ato's Dev</a>
             <a href="#contato">Contato</a>
         </nav>
-        <button class="menu-hamburger" id="menu" aria-label="Abrir menu">
-            <span class="bar1"></span><span class="bar2"></span><span class="bar3"></span>
-        </button>
+        <div class="header-actions">
+            <nav class="lang" aria-label="Idioma">
+                <span aria-current="page">PT</span>
+                <a href="en/" hreflang="en" lang="en">EN<span class="sr-only"> (English version)</span></a>
+            </nav>
+            <button class="menu-hamburger" id="menu" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false"
+                    data-label-open="Abrir menu" data-label-close="Fechar menu">
+                <span class="bar1"></span><span class="bar2"></span><span class="bar3"></span>
+            </button>
+        </div>
     </header>
 
-    <main>
+    <main id="conteudo" tabindex="-1">
         <!-- Home -->
         <section class="home" id="home">
             <div class="home-content">
                 <p class="tag mono">&gt; olá, eu sou o</p>
                 <h1>Samuel Freitas</h1>
-                <h2>Analista de <span class="grad">Dados</span></h2>
+                <p class="home-role">Analista de <span class="grad">Dados</span></p>
                 <p class="lead">
                     Transformo dados operacionais em decisão. Construo pipelines
                     <b>ETL em Python</b>, bancos em <b>PostgreSQL</b> e dashboards em
                     <b>Power BI</b> para operações de logística last mile, em um ambiente
                     bilíngue português/chinês.
                 </p>
-                <div class="chips">
-                    <span>Power BI</span><span>DAX</span><span>Power Query M</span>
-                    <span>SQL</span><span>PostgreSQL</span><span>Python</span><span>ETL</span><span>IA aplicada</span>
-                </div>
+                <ul class="chips" aria-label="Principais tecnologias">
+                    <li>Power BI</li><li>DAX</li><li>Power Query M</li>
+                    <li>SQL</li><li>PostgreSQL</li><li>Python</li><li>ETL</li><li>IA aplicada</li>
+                </ul>
                 <div class="home-actions">
                     <a href="Arquivos/Curriculo/Curriculo_Samuel_Freitas.pdf" class="btn" download>
-                        <i class="bx bx-download"></i> Baixar currículo
+                        <i class="bx bx-download" aria-hidden="true"></i> Baixar currículo <span class="sr-only">(PDF)</span>
                     </a>
                     <a href="#projetos" class="btn btn-ghost">Ver projetos</a>
                 </div>
                 <div class="social-media">
-                    <a href="https://www.linkedin.com/in/samuel-freitas-95b9a324a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/FreitaslrS" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
-                    <a href="mailto:samuelfreitas.ti@outlook.com" aria-label="E-mail"><i class="bx bx-envelope"></i></a>
-                    <a href="https://wa.me/5511966000037" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/samuel-freitas-95b9a324a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (abre em nova aba)"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/FreitaslrS" target="_blank" rel="noopener noreferrer" aria-label="GitHub (abre em nova aba)"><i class="bx bxl-github" aria-hidden="true"></i></a>
+                    <a href="mailto:samuelfreitas.ti@outlook.com" aria-label="E-mail"><i class="bx bx-envelope" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/5511966000037" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (abre em nova aba)"><i class="bx bxl-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="home-img">
                 <div class="photo-frame">
-                    <img src="IMGS/minha-foto.jpg" alt="Foto de Samuel Freitas" />
+                    <img src="IMGS/minha-foto.webp" alt="Foto de Samuel Freitas" width="320" height="400" fetchpriority="high" />
                 </div>
-                <div class="float-card fc-1"><i class="bx bx-data"></i><div><b>30M+</b><small>registros tratados</small></div></div>
-                <div class="float-card fc-2"><i class="bx bx-bar-chart-alt-2"></i><div><b>Power BI</b><small>usado pela presidência</small></div></div>
+                <div class="float-card fc-1"><i class="bx bx-data" aria-hidden="true"></i><div><b>30M+</b><small>registros tratados</small></div></div>
+                <div class="float-card fc-2"><i class="bx bx-bar-chart-alt-2" aria-hidden="true"></i><div><b>Power BI</b><small>usado pela presidência</small></div></div>
             </div>
         </section>
 
         <!-- Números -->
-        <section class="stats reveal">
+        <section class="stats reveal" aria-label="Números">
             <div class="stat"><b>11+</b><span>painéis Power BI em produção</span></div>
             <div class="stat"><b>30M+</b><span>registros em um único modelo</span></div>
             <div class="stat"><b>400 MB</b><span>arquivos processados em streaming</span></div>
-            <div class="stat"><b>PT · 中文</b><span>reports bilíngues para a liderança</span></div>
+            <div class="stat"><b>PT · <span lang="zh">中文</span></b><span>reports bilíngues para a liderança</span></div>
         </section>
 
         <!-- Sobre -->
@@ -113,25 +155,25 @@
                         negócio, e converso bem com todos esses lados.
                     </p>
                 </div>
-                <ol class="timeline reveal">
+                <ol class="timeline reveal" aria-label="Experiência e formação">
                     <li>
                         <span class="tl-date">02/2026 – atual</span>
-                        <h4>Analista de Dados Pleno</h4>
+                        <h3>Analista de Dados Pleno</h3>
                         <p>Logística last mile · ETL, PostgreSQL, Power BI, reports PT/ZH</p>
                     </li>
                     <li>
                         <span class="tl-date">11/2023 – 01/2026</span>
-                        <h4>Analista de Dados Jr. / Auxiliar de TI</h4>
+                        <h3>Analista de Dados Jr. / Auxiliar de TI</h3>
                         <p>Transportadora · economia de R$ 50 mil em precificação, TMS (SSW), Microsoft 365/Teams e dashboards</p>
                     </li>
                     <li>
                         <span class="tl-date">11/2020 – 09/2023</span>
-                        <h4>Gerente de Operações</h4>
+                        <h3>Gerente de Operações</h3>
                         <p>Varejo · caixa, compras, recebimento e estoque</p>
                     </li>
                     <li>
                         <span class="tl-date">Formação</span>
-                        <h4>Ciência da Computação (cursando)</h4>
+                        <h3>Ciência da Computação (cursando)</h3>
                         <p>Anhembi Morumbi · Técnico em Redes – ITB (2021)</p>
                     </li>
                 </ol>
@@ -146,95 +188,96 @@
                 <p class="subtitle">Painéis corporativos aparecem com as informações ocultadas por confidencialidade.</p>
             </div>
 
-            <div class="filters reveal" role="tablist">
-                <button class="filter active" data-filter="all">Todos</button>
-                <button class="filter" data-filter="dados">Dados & BI</button>
-                <button class="filter" data-filter="web">Web</button>
-                <button class="filter" data-filter="auto">Automação & Infra</button>
+            <div class="filters reveal" role="group" aria-label="Filtrar projetos por categoria">
+                <button type="button" class="filter active" data-filter="all" aria-pressed="true">Todos</button>
+                <button type="button" class="filter" data-filter="dados" aria-pressed="false">Dados &amp; BI</button>
+                <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+                <button type="button" class="filter" data-filter="auto" aria-pressed="false">Automação &amp; Infra</button>
             </div>
 
             <div class="projetos-grid">
                 <article class="card reveal" data-cat="dados">
-                    <button class="card-img zoom" data-full="IMGS/paineis/performance-hub.jpg" data-title="Performance de HUB"><img src="IMGS/paineis/performance-hub.jpg" alt="Performance de HUB" loading="lazy" /><span class="badge"><i class="bx bx-lock-alt"></i> dados ocultados</span></button>
+                    <button type="button" class="card-img zoom" data-full="IMGS/paineis/performance-hub.webp" data-title="Performance de HUB"><img src="IMGS/paineis/thumbs/performance-hub.webp" alt="Ampliar painel: Performance de HUB" width="640" height="406" loading="lazy" decoding="async" /><span class="badge"><i class="bx bx-lock-alt" aria-hidden="true"></i> dados ocultados</span></button>
                     <div class="card-body">
                         <h3>Torre de Controle · Performance de HUBs</h3>
                         <p>Painel de performance de 4 hubs de last mile, usado pela presidência. ETL em Python com leitura em streaming de arquivos de 300–400 MB → PostgreSQL → Power BI, com 30M+ registros.</p>
-                        <div class="tags"><span>Python</span><span>PostgreSQL</span><span>Power BI</span><span>DAX</span></div>
+                        <ul class="tags" aria-label="Tecnologias"><li>Python</li><li>PostgreSQL</li><li>Power BI</li><li>DAX</li></ul>
                     </div>
                 </article>
 
                 <article class="card reveal" data-cat="dados">
-                    <button class="card-img zoom" data-full="IMGS/paineis/monitor-rotas.jpg" data-title="Monitoramento de rotas"><img src="IMGS/paineis/monitor-rotas.jpg" alt="Monitoramento de rotas" loading="lazy" /><span class="badge"><i class="bx bx-lock-alt"></i> dados ocultados</span></button>
+                    <button type="button" class="card-img zoom" data-full="IMGS/paineis/monitor-rotas.webp" data-title="Monitoramento de rotas"><img src="IMGS/paineis/thumbs/monitor-rotas.webp" alt="Ampliar painel: Monitoramento de rotas" width="640" height="367" loading="lazy" decoding="async" /><span class="badge"><i class="bx bx-lock-alt" aria-hidden="true"></i> dados ocultados</span></button>
                     <div class="card-body">
                         <h3>Monitor de Expedição Last Mile</h3>
                         <p>Acompanha a saída das rotas noturnas e aponta o gargalo de cada atraso: doca, carregamento ou liberação. Fonte em Google Sheets, título bilíngue PT/ZH.</p>
-                        <div class="tags"><span>Power BI</span><span>Power Query M</span><span>Google Sheets</span></div>
+                        <ul class="tags" aria-label="Tecnologias"><li>Power BI</li><li>Power Query M</li><li>Google Sheets</li></ul>
                     </div>
                 </article>
 
                 <article class="card reveal" data-cat="dados">
-                    <button class="card-img zoom" data-full="IMGS/paineis/perdas-extravio.jpg" data-title="Prevenção de perdas e extravios"><img src="IMGS/paineis/perdas-extravio.jpg" alt="Prevenção de perdas e extravios" loading="lazy" /><span class="badge"><i class="bx bx-lock-alt"></i> dados ocultados</span></button>
+                    <button type="button" class="card-img zoom" data-full="IMGS/paineis/perdas-extravio.webp" data-title="Prevenção de perdas e extravios"><img src="IMGS/paineis/thumbs/perdas-extravio.webp" alt="Ampliar painel: Prevenção de perdas e extravios" width="640" height="367" loading="lazy" decoding="async" /><span class="badge"><i class="bx bx-lock-alt" aria-hidden="true"></i> dados ocultados</span></button>
                     <div class="card-body">
                         <h3>Prevenção de Perdas e Extravios</h3>
                         <p>Monitora pacotes em risco, valores envolvidos e responsáveis por etapa, com filtros por região e cliente para agir antes da perda.</p>
-                        <div class="tags"><span>SQL</span><span>PostgreSQL</span><span>Power BI</span><span>DAX</span></div>
+                        <ul class="tags" aria-label="Tecnologias"><li>SQL</li><li>PostgreSQL</li><li>Power BI</li><li>DAX</li></ul>
                     </div>
                 </article>
 
                 <article class="card reveal" data-cat="dados">
-                    <button class="card-img zoom" data-full="IMGS/paineis/devolucao.jpg" data-title="Operação de devolução"><img src="IMGS/paineis/devolucao.jpg" alt="Operação de devolução" loading="lazy" /><span class="badge"><i class="bx bx-lock-alt"></i> dados ocultados</span></button>
+                    <button type="button" class="card-img zoom" data-full="IMGS/paineis/devolucao.webp" data-title="Operação de devolução"><img src="IMGS/paineis/thumbs/devolucao.webp" alt="Ampliar painel: Operação de devolução" width="640" height="367" loading="lazy" decoding="async" /><span class="badge"><i class="bx bx-lock-alt" aria-hidden="true"></i> dados ocultados</span></button>
                     <div class="card-body">
                         <h3>Ciclo de Vida da Devolução</h3>
                         <p>Redesenho do painel de logística reversa. Corrigi um filtro no ETL que descartava ~63% dos registros válidos e devolvi a confiança no indicador.</p>
-                        <div class="tags"><span>Python</span><span>SQL</span><span>Power BI</span><span>Data Quality</span></div>
+                        <ul class="tags" aria-label="Tecnologias"><li>Python</li><li>SQL</li><li>Power BI</li><li>Data Quality</li></ul>
                     </div>
                 </article>
 
                 <article class="card reveal" data-cat="web">
-                    <div class="card-img img-top"><img src="IMGS/projetos/ks-conexao.jpg" alt="Site KS Conexão" loading="lazy" /></div>
+                    <div class="card-img img-top"><img src="IMGS/projetos/ks-conexao.webp" alt="Página inicial do site KS Conexão" width="640" height="969" loading="lazy" decoding="async" /></div>
                     <div class="card-body">
                         <h3>KS Conexão · site institucional</h3>
                         <p>Site para empresa de instalações elétricas com área do cliente, pedido de orçamento, blog e painel administrativo.</p>
-                        <div class="tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span></div>
+                        <ul class="tags" aria-label="Tecnologias"><li>PHP</li><li>MySQL</li><li>HTML/CSS</li><li>JavaScript</li></ul>
                     </div>
                 </article>
 
                 <article class="card card-icon reveal" data-cat="auto">
-                    <div class="card-ico"><i class="bx bxl-telegram"></i></div>
+                    <div class="card-ico" aria-hidden="true"><i class="bx bxl-telegram"></i></div>
                     <div class="card-body">
                         <h3>Monitor de USB com alertas</h3>
                         <p>Script que detecta dispositivos USB conectados, registra log e envia alerta com captura de tela pelo Telegram.</p>
-                        <div class="tags"><span>Python</span><span>PowerShell</span><span>Telegram API</span></div>
+                        <ul class="tags" aria-label="Tecnologias"><li>Python</li><li>PowerShell</li><li>Telegram API</li></ul>
                     </div>
                 </article>
 
                 <article class="card card-icon reveal" data-cat="dados">
-                    <div class="card-ico"><i class="bx bx-wallet"></i></div>
+                    <div class="card-ico" aria-hidden="true"><i class="bx bx-wallet"></i></div>
                     <div class="card-body">
                         <h3>Controle financeiro pessoal</h3>
                         <p>Planilha automatizada com Python e dashboard em Looker Studio para acompanhar receitas, gastos e metas.</p>
-                        <div class="tags"><span>Google Sheets</span><span>Python</span><span>Looker Studio</span></div>
+                        <ul class="tags" aria-label="Tecnologias"><li>Google Sheets</li><li>Python</li><li>Looker Studio</li></ul>
                     </div>
                 </article>
 
                 <article class="card card-icon reveal" data-cat="auto">
-                    <div class="card-ico"><i class="bx bx-wrench"></i></div>
+                    <div class="card-ico" aria-hidden="true"><i class="bx bx-wrench"></i></div>
                     <div class="card-body">
                         <h3>Ferramenta de checkup do Windows</h3>
                         <p>Executável para diagnóstico e otimização de Windows 10/11, usado nos atendimentos de manutenção. <em>Em desenvolvimento.</em></p>
-                        <div class="tags"><span>Windows</span><span>Automação</span></div>
+                        <ul class="tags" aria-label="Tecnologias"><li>Windows</li><li>Automação</li></ul>
                     </div>
                 </article>
 
                 <article class="card card-icon reveal" data-cat="auto">
-                    <div class="card-ico"><i class="bx bx-usb"></i></div>
+                    <div class="card-ico" aria-hidden="true"><i class="bx bx-usb"></i></div>
                     <div class="card-body">
                         <h3>Pendrive multiboot</h3>
                         <p>Pendrive com várias ISOs (Windows e Linux) configurado com Ventoy e tema próprio para instalações e recuperação.</p>
-                        <div class="tags"><span>Ventoy</span><span>JSON</span><span>Linux</span></div>
+                        <ul class="tags" aria-label="Tecnologias"><li>Ventoy</li><li>JSON</li><li>Linux</li></ul>
                     </div>
                 </article>
             </div>
+            <p class="sr-only" id="filtro-status" aria-live="polite"></p>
 
             <div class="galeria">
                 <div class="section-title reveal">
@@ -243,17 +286,17 @@
                     <p class="subtitle">Textos, números e logotipos ocultados (LGPD e confidencialidade). Clique para ampliar.</p>
                 </div>
                 <div class="gal-grid">
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/performance-hub.jpg" data-title="Performance de HUB"><img src="IMGS/paineis/performance-hub.jpg" alt="Performance de HUB" loading="lazy" /><span>Performance de HUB</span></button>
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/monitor-rotas.jpg" data-title="Monitoramento de rotas"><img src="IMGS/paineis/monitor-rotas.jpg" alt="Monitoramento de rotas" loading="lazy" /><span>Monitoramento de rotas</span></button>
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/perdas-extravio.jpg" data-title="Prevenção de perdas e extravios"><img src="IMGS/paineis/perdas-extravio.jpg" alt="Prevenção de perdas e extravios" loading="lazy" /><span>Prevenção de perdas e extravios</span></button>
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/devolucao.jpg" data-title="Operação de devolução"><img src="IMGS/paineis/devolucao.jpg" alt="Operação de devolução" loading="lazy" /><span>Operação de devolução</span></button>
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/backlog-b2c.jpg" data-title="Pacotes sem movimentação · B2C"><img src="IMGS/paineis/backlog-b2c.jpg" alt="Pacotes sem movimentação · B2C" loading="lazy" /><span>Pacotes sem movimentação · B2C</span></button>
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/first-mile.jpg" data-title="Monitoramento First Mile"><img src="IMGS/paineis/first-mile.jpg" alt="Monitoramento First Mile" loading="lazy" /><span>Monitoramento First Mile</span></button>
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/performance-coleta.jpg" data-title="Performance de coleta FM/LM"><img src="IMGS/paineis/performance-coleta.jpg" alt="Performance de coleta FM/LM" loading="lazy" /><span>Performance de coleta FM/LM</span></button>
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/tentativas-entrega.jpg" data-title="Tentativas de entrega"><img src="IMGS/paineis/tentativas-entrega.jpg" alt="Tentativas de entrega" loading="lazy" /><span>Tentativas de entrega</span></button>
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/tempo-entrada-rota.jpg" data-title="Tempo de entrada em rota"><img src="IMGS/paineis/tempo-entrada-rota.jpg" alt="Tempo de entrada em rota" loading="lazy" /><span>Tempo de entrada em rota</span></button>
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/resultado-regional.jpg" data-title="Resultado da operação por regional"><img src="IMGS/paineis/resultado-regional.jpg" alt="Resultado da operação por regional" loading="lazy" /><span>Resultado da operação por regional</span></button>
-                <button class="gal-item zoom reveal" data-full="IMGS/paineis/bloqueio-vtga.jpg" data-title="Bloqueio e desbloqueio por região"><img src="IMGS/paineis/bloqueio-vtga.jpg" alt="Bloqueio e desbloqueio por região" loading="lazy" /><span>Bloqueio e desbloqueio por região</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/performance-hub.webp" data-title="Performance de HUB"><img src="IMGS/paineis/thumbs/performance-hub.webp" alt="" width="640" height="406" loading="lazy" decoding="async" /><span>Performance de HUB</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/monitor-rotas.webp" data-title="Monitoramento de rotas"><img src="IMGS/paineis/thumbs/monitor-rotas.webp" alt="" width="640" height="367" loading="lazy" decoding="async" /><span>Monitoramento de rotas</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/perdas-extravio.webp" data-title="Prevenção de perdas e extravios"><img src="IMGS/paineis/thumbs/perdas-extravio.webp" alt="" width="640" height="367" loading="lazy" decoding="async" /><span>Prevenção de perdas e extravios</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/devolucao.webp" data-title="Operação de devolução"><img src="IMGS/paineis/thumbs/devolucao.webp" alt="" width="640" height="367" loading="lazy" decoding="async" /><span>Operação de devolução</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/backlog-b2c.webp" data-title="Pacotes sem movimentação · B2C"><img src="IMGS/paineis/thumbs/backlog-b2c.webp" alt="" width="640" height="370" loading="lazy" decoding="async" /><span>Pacotes sem movimentação · B2C</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/first-mile.webp" data-title="Monitoramento First Mile"><img src="IMGS/paineis/thumbs/first-mile.webp" alt="" width="640" height="367" loading="lazy" decoding="async" /><span>Monitoramento First Mile</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/performance-coleta.webp" data-title="Performance de coleta FM/LM"><img src="IMGS/paineis/thumbs/performance-coleta.webp" alt="" width="640" height="367" loading="lazy" decoding="async" /><span>Performance de coleta FM/LM</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/tentativas-entrega.webp" data-title="Tentativas de entrega"><img src="IMGS/paineis/thumbs/tentativas-entrega.webp" alt="" width="640" height="367" loading="lazy" decoding="async" /><span>Tentativas de entrega</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/tempo-entrada-rota.webp" data-title="Tempo de entrada em rota"><img src="IMGS/paineis/thumbs/tempo-entrada-rota.webp" alt="" width="640" height="367" loading="lazy" decoding="async" /><span>Tempo de entrada em rota</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/resultado-regional.webp" data-title="Resultado da operação por regional"><img src="IMGS/paineis/thumbs/resultado-regional.webp" alt="" width="640" height="367" loading="lazy" decoding="async" /><span>Resultado da operação por regional</span></button>
+                <button type="button" class="gal-item zoom reveal" data-full="IMGS/paineis/bloqueio-vtga.webp" data-title="Bloqueio e desbloqueio por região"><img src="IMGS/paineis/thumbs/bloqueio-vtga.webp" alt="" width="640" height="406" loading="lazy" decoding="async" /><span>Bloqueio e desbloqueio por região</span></button>
                 </div>
             </div>
         </section>
@@ -266,19 +309,19 @@
             </div>
             <div class="stack-grid">
                 <div class="stack-box reveal">
-                    <h3><i class="bx bx-bar-chart-square"></i> BI & Visualização</h3>
+                    <h3><i class="bx bx-bar-chart-square" aria-hidden="true"></i> BI &amp; Visualização</h3>
                     <ul><li>Power BI</li><li>DAX</li><li>Power Query M</li><li>Looker Studio</li><li>Modelagem de dados</li></ul>
                 </div>
                 <div class="stack-box reveal">
-                    <h3><i class="bx bx-code-alt"></i> Dados & Código</h3>
+                    <h3><i class="bx bx-code-alt" aria-hidden="true"></i> Dados &amp; Código</h3>
                     <ul><li>Python</li><li>SQL</li><li>PostgreSQL</li><li>Git / GitHub</li><li>IA generativa (LLMs)</li></ul>
                 </div>
                 <div class="stack-box reveal">
-                    <h3><i class="bx bx-spreadsheet"></i> Planilhas</h3>
+                    <h3><i class="bx bx-spreadsheet" aria-hidden="true"></i> Planilhas</h3>
                     <ul><li>Excel avançado</li><li>Google Sheets</li><li>WPS Office</li><li>Power Query</li></ul>
                 </div>
                 <div class="stack-box reveal">
-                    <h3><i class="bx bx-server"></i> Infra & Sistemas</h3>
+                    <h3><i class="bx bx-server" aria-hidden="true"></i> Infra &amp; Sistemas</h3>
                     <ul><li>Linux / Bash</li><li>Redes</li><li>Windows</li><li>Suporte N1/N2</li><li>HTML · CSS · JS · PHP</li></ul>
                 </div>
             </div>
@@ -287,16 +330,16 @@
         <!-- Ato's Dev -->
         <section class="servicos" id="servicos">
             <div class="servicos-wrap reveal">
-                <img src="IMGS/logo-atosdev.png" alt="Ato's Dev" class="servicos-logo" />
+                <img src="IMGS/logo-atosdev.webp" alt="Logo da Ato's Dev" class="servicos-logo" width="210" height="182" loading="lazy" decoding="async" />
                 <div>
                     <p class="mono">// também atendo como</p>
                     <h2>Ato's Dev · <span class="grad">suporte e manutenção</span></h2>
                     <p>Manutenção preventiva, formatação e otimização de notebooks e desktops, configuração de impressoras em rede e suporte técnico. Atendimento aos sábados e em alguns dias da semana após as 19h, com garantia de 30 dias.</p>
-                    <div class="servicos-list">
-                        <span><i class="bx bx-laptop"></i> Notebooks e desktops</span>
-                        <span><i class="bx bx-printer"></i> Impressoras em rede</span>
-                        <span><i class="bx bx-shield-quarter"></i> Garantia de 30 dias</span>
-                    </div>
+                    <ul class="servicos-list">
+                        <li><i class="bx bx-laptop" aria-hidden="true"></i> Notebooks e desktops</li>
+                        <li><i class="bx bx-printer" aria-hidden="true"></i> Impressoras em rede</li>
+                        <li><i class="bx bx-shield-quarter" aria-hidden="true"></i> Garantia de 30 dias</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -310,16 +353,16 @@
             </div>
             <div class="contato-grid">
                 <a class="contato-card reveal" href="mailto:samuelfreitas.ti@outlook.com">
-                    <i class="bx bx-envelope"></i><b>E-mail</b><span>samuelfreitas.ti@outlook.com</span>
+                    <i class="bx bx-envelope" aria-hidden="true"></i><b>E-mail</b>
                 </a>
                 <a class="contato-card reveal" href="https://www.linkedin.com/in/samuel-freitas-95b9a324a" target="_blank" rel="noopener noreferrer">
-                    <i class="bx bxl-linkedin"></i><b>LinkedIn</b><span>/in/samuel-freitas</span>
+                    <i class="bx bxl-linkedin" aria-hidden="true"></i><b>LinkedIn</b><span class="sr-only">(abre em nova aba)</span>
                 </a>
                 <a class="contato-card reveal" href="https://wa.me/5511966000037" target="_blank" rel="noopener noreferrer">
-                    <i class="bx bxl-whatsapp"></i><b>WhatsApp</b><span>(11) 96600-0037</span>
+                    <i class="bx bxl-whatsapp" aria-hidden="true"></i><b>WhatsApp</b><span class="sr-only">(abre em nova aba)</span>
                 </a>
                 <a class="contato-card reveal" href="https://github.com/FreitaslrS" target="_blank" rel="noopener noreferrer">
-                    <i class="bx bxl-github"></i><b>GitHub</b><span>FreitaslrS</span>
+                    <i class="bx bxl-github" aria-hidden="true"></i><b>GitHub</b><span class="sr-only">(abre em nova aba)</span>
                 </a>
             </div>
         </section>
@@ -327,14 +370,12 @@
 
     <footer class="footer">
         <p class="mono">&lt;/Freitas&gt; · © <span id="ano">2026</span> · Osasco, SP</p>
-        <a href="#home" class="to-top" aria-label="Voltar ao topo"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#home" class="to-top" aria-label="Voltar ao topo"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
     </footer>
 
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-        <button class="lb-close" aria-label="Fechar"><i class="bx bx-x"></i></button>
-        <figure><img src="" alt="" /><figcaption></figcaption></figure>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Painel ampliado" aria-hidden="true" inert>
+        <button type="button" class="lb-close" aria-label="Fechar"><i class="bx bx-x" aria-hidden="true"></i></button>
+        <figure><img alt="" /><figcaption></figcaption></figure>
     </div>
-
-    <script src="JS/script.js"></script>
 </body>
 </html>
