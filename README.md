@@ -37,6 +37,8 @@ Para adicionar um painel novo:
 ## Site bilíngue
 São duas páginas estáticas: `index.html` (PT) e `en/index.html` (EN). Isso permite que o Google indexe as duas.
 - **Toda mudança de conteúdo precisa ser feita nos dois arquivos.**
+- Ao alterar `CSS/style.css` ou `JS/script.js`, aumente o `?v=` nos links das duas páginas (ex.: `?v=3`),
+  senão quem já visitou o site pode ver o arquivo antigo por até 10 minutos.
 - Na versão EN, os caminhos começam com `../` e os IDs das seções estão em inglês (`#about`, `#projects`…).
 - O botão de currículo da versão EN aponta para o PDF em português (ainda não há versão em inglês).
 - Se o endereço do site mudar (ex.: Vercel ou domínio próprio), troque `https://freitaslrs.github.io/portfolio/`
