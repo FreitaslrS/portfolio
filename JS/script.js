@@ -107,7 +107,7 @@ function abrirLightbox(el) {
     lightbox.inert = false;
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
+    document.body.classList.add("lb-open");
     lbClose.focus();
 }
 function fecharLightbox() {
@@ -115,7 +115,7 @@ function fecharLightbox() {
     lightbox.classList.remove("open");
     lightbox.setAttribute("aria-hidden", "true");
     lightbox.inert = true;
-    document.body.style.overflow = "";
+    document.body.classList.remove("lb-open");
     if (lbTrigger) lbTrigger.focus();
 }
 document.querySelectorAll(".zoom").forEach((el) =>

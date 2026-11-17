@@ -20,14 +20,15 @@ Arquivos/Curriculo/        PDF do currículo (botão "Baixar currículo")
 ## Painéis
 As imagens em `IMGS/paineis/` são prints reais com textos, números e logos pixelados.
 O site usa as versões `.webp`: a grande (`IMGS/paineis/nome.webp`) abre no lightbox e a miniatura
-(`IMGS/paineis/thumbs/nome.webp`) aparece nos cards. Os `.jpg` ficam guardados como original.
+(`IMGS/paineis/thumbs/nome.webp`) aparece nos cards. Os `.jpg` originais não ficam no repositório
+(guarde-os fora dele); só os `.webp` são publicados.
 
 Para adicionar um painel novo:
-1. Salve a imagem já ofuscada nessa pasta.
+1. Ofusque a imagem e salve o original **fora do repositório**.
 2. Gere as duas versões WebP (exemplo com Python + Pillow):
    ```python
    from PIL import Image
-   im = Image.open("IMGS/paineis/novo.jpg").convert("RGB")
+   im = Image.open("caminho/do/original/novo.jpg").convert("RGB")
    im.save("IMGS/paineis/novo.webp", "WEBP", quality=80, method=6)
    th = im.resize((640, round(im.height * 640 / im.width)))
    th.save("IMGS/paineis/thumbs/novo.webp", "WEBP", quality=78, method=6)
@@ -38,7 +39,7 @@ Para adicionar um painel novo:
 ## Site bilíngue
 São duas páginas estáticas: `index.html` (PT) e `en/index.html` (EN). Isso permite que o Google indexe as duas.
 - **Toda mudança de conteúdo precisa ser feita nos dois arquivos.**
-- Ao alterar `CSS/style.css` ou `JS/script.js`, aumente o `?v=` nos links das duas páginas (ex.: `?v=4`),
+- Ao alterar `CSS/style.css` ou `JS/script.js`, aumente o `?v=` nos links das duas páginas (ex.: `?v=5`),
   senão quem já visitou o site pode ver o arquivo antigo por até 10 minutos.
 - Na versão EN, os caminhos começam com `../` e os IDs das seções estão em inglês (`#about`, `#projects`…).
 - O botão de currículo da versão EN aponta para o PDF em português (ainda não há versão em inglês).
@@ -56,6 +57,13 @@ Cada push na `main` atualiza `https://freitaslrs.github.io/portfolio/` em 1–2 
   LinkedIn, GitHub ou WhatsApp.
 - O e-mail é montado via JS a partir de `data-email-user`/`data-email-domain`; o `href` do HTML
   usa entidades (`&#64;`, `&#46;`) para continuar funcionando sem JS.
+
+## Segurança
+- CSP via `<meta http-equiv="Content-Security-Policy">` nas duas páginas: só recursos do próprio site,
+  sem `'unsafe-inline'`. Não use `style=""`, `onclick=""` nem `<script>` inline (o JSON-LD é permitido
+  por não ser executável); coloque estilos no `CSS/style.css` e scripts no `JS/script.js`.
+- Limite do GitHub Pages: não é possível enviar cabeçalhos HTTP próprios, então `frame-ancestors`
+  (proteção contra o site ser embutido em iframe) não funciona via `<meta>` e fica de fora.
 
 ## Créditos e licenças
 | Recurso | Autor | Licença | Arquivo |
