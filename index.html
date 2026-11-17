@@ -45,12 +45,13 @@
     </script>
 
     <link rel="icon" href="IMGS/favicon.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="preload" href="CSS/fonts/poppins-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="CSS/fonts/poppins-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="CSS/fonts/poppins-800-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="CSS/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link href="CSS/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="CSS/style.css?v=2" />
-    <script src="JS/script.js?v=2" defer></script>
+    <link rel="stylesheet" href="CSS/style.css?v=3" />
+    <script src="JS/script.js?v=3" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -107,7 +108,7 @@
                 <div class="social-media">
                     <a href="https://www.linkedin.com/in/samuel-freitas-95b9a324a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (abre em nova aba)"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
                     <a href="https://github.com/FreitaslrS" target="_blank" rel="noopener noreferrer" aria-label="GitHub (abre em nova aba)"><i class="bx bxl-github" aria-hidden="true"></i></a>
-                    <a href="mailto:samuelfreitas.ti@outlook.com" aria-label="E-mail"><i class="bx bx-envelope" aria-hidden="true"></i></a>
+                    <a href="mailto:samuelfreitas.ti&#64;outlook&#46;com" data-email-user="samuelfreitas.ti" data-email-domain="outlook.com" aria-label="E-mail"><i class="bx bx-envelope" aria-hidden="true"></i></a>
                     <a href="https://wa.me/5511966000037" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (abre em nova aba)"><i class="bx bxl-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -352,7 +353,7 @@
                 <p class="subtitle">Aberto a oportunidades em dados, BI e engenharia de dados.</p>
             </div>
             <div class="contato-grid">
-                <a class="contato-card reveal" href="mailto:samuelfreitas.ti@outlook.com">
+                <a class="contato-card reveal" href="mailto:samuelfreitas.ti&#64;outlook&#46;com" data-email-user="samuelfreitas.ti" data-email-domain="outlook.com">
                     <i class="bx bx-envelope" aria-hidden="true"></i><b>E-mail</b>
                 </a>
                 <a class="contato-card reveal" href="https://www.linkedin.com/in/samuel-freitas-95b9a324a" target="_blank" rel="noopener noreferrer">
@@ -369,7 +370,10 @@
     </main>
 
     <footer class="footer">
-        <p class="mono">&lt;/Freitas&gt; · © <span id="ano">2026</span> · Osasco, SP</p>
+        <div>
+            <p class="mono">&lt;/Freitas&gt; · © <span id="ano">2026</span> · Osasco, SP</p>
+            <p class="footer-note">Este site não usa cookies nem coleta dados de visitantes.</p>
+        </div>
         <a href="#home" class="to-top" aria-label="Voltar ao topo"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
     </footer>
 

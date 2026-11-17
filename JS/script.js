@@ -84,6 +84,11 @@ filters.forEach((btn) =>
     })
 );
 
+// E-mail montado via JS (o endereço não fica em texto puro no HTML; sem JS o link continua funcionando)
+document.querySelectorAll("[data-email-user]").forEach((a) => {
+    a.href = "mailto:" + a.dataset.emailUser + "@" + a.dataset.emailDomain;
+});
+
 // Ano automático no rodapé
 document.getElementById("ano").textContent = new Date().getFullYear();
 

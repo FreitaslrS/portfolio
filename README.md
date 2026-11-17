@@ -8,7 +8,8 @@ index.html                 versão em português (fica na raiz para o GitHub Pag
 en/index.html              versão em inglês (usa ../ para CSS, JS e imagens)
 sitemap.xml                SEO (lista as duas versões; envie no Google Search Console)
 CSS/style.css              estilos e paleta (variáveis no topo do arquivo)
-CSS/boxicons/              ícones embutidos (não dependem de CDN)
+CSS/boxicons/              ícones embutidos (não dependem de CDN) + LICENSE (MIT)
+CSS/fonts/                 Poppins e JetBrains Mono em woff2 (subset latin) + OFL.txt
 JS/script.js               menu mobile, filtro de projetos, animações, lightbox (textos PT/EN)
 IMGS/                      foto, logo, favicon, og-image.jpg (imagem de compartilhamento)
 IMGS/projetos/             miniaturas dos projetos
@@ -37,7 +38,7 @@ Para adicionar um painel novo:
 ## Site bilíngue
 São duas páginas estáticas: `index.html` (PT) e `en/index.html` (EN). Isso permite que o Google indexe as duas.
 - **Toda mudança de conteúdo precisa ser feita nos dois arquivos.**
-- Ao alterar `CSS/style.css` ou `JS/script.js`, aumente o `?v=` nos links das duas páginas (ex.: `?v=3`),
+- Ao alterar `CSS/style.css` ou `JS/script.js`, aumente o `?v=` nos links das duas páginas (ex.: `?v=4`),
   senão quem já visitou o site pode ver o arquivo antigo por até 10 minutos.
 - Na versão EN, os caminhos começam com `../` e os IDs das seções estão em inglês (`#about`, `#projects`…).
 - O botão de currículo da versão EN aponta para o PDF em português (ainda não há versão em inglês).
@@ -47,6 +48,23 @@ São duas páginas estáticas: `index.html` (PT) e `en/index.html` (EN). Isso pe
 ## Publicar no GitHub Pages
 O site é publicado pelo repositório `FreitaslrS/portfolio` (branch `main`, pasta `/ (root)`).
 Cada push na `main` atualiza `https://freitaslrs.github.io/portfolio/` em 1–2 minutos.
+
+## Privacidade (LGPD)
+- O site não usa cookies, analytics nem formulários, e não coleta dados de visitantes.
+- Fontes e ícones são servidos pelo próprio site: o IP do visitante não é enviado a terceiros
+  (sem Google Fonts/CDN). As únicas conexões externas acontecem quando o visitante clica em
+  LinkedIn, GitHub ou WhatsApp.
+- O e-mail é montado via JS a partir de `data-email-user`/`data-email-domain`; o `href` do HTML
+  usa entidades (`&#64;`, `&#46;`) para continuar funcionando sem JS.
+
+## Créditos e licenças
+| Recurso | Autor | Licença | Arquivo |
+|---|---|---|---|
+| [Boxicons](https://github.com/atisawd/boxicons) | Aniket Suvarna | MIT | `CSS/boxicons/LICENSE` |
+| [Poppins](https://github.com/itfoundry/Poppins) | The Poppins Project Authors | SIL Open Font License 1.1 | `CSS/fonts/OFL.txt` |
+| [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | The JetBrains Mono Project Authors | SIL Open Font License 1.1 | `CSS/fonts/OFL.txt` |
+
+As fontes foram baixadas do Google Fonts (woff2, subset latin) e não foram modificadas.
 
 ## Paleta
 | Cor | Hex |
