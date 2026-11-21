@@ -231,7 +231,7 @@ section { padding: 6rem 8%; }
 .servicos-list i { color: var(--azul); font-size: 1.1rem; }
 
 /* ---------- Contato ---------- */
-.contato-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+.contato-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.2rem; }
 .contato-card {
     display: flex; flex-direction: column; align-items: center; text-align: center; gap: .3rem;
     padding: 2rem 1rem; border-radius: var(--raio); background: var(--grafite); border: 1px solid var(--borda); transition: .3s;
